@@ -38,6 +38,8 @@ function checkWinner() {
 
 function doTurn() {
   turn++;
-  checkWinner();
+  if (!checkWinner()) {
+    setMessage("Tie game.")
+  }
   updateState();
 }
