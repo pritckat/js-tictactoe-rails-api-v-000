@@ -40,11 +40,11 @@ function doTurn(square) {
   updateState(square);
   turn++;
   if (checkWinner()) {
-    saveGame();
+    //saveGame();
     resetBoard();
   } else if (turn === 9) {
     setMessage("Tie game.");
-    saveGame();
+    //saveGame();
     resetBoard();
   }
 }
