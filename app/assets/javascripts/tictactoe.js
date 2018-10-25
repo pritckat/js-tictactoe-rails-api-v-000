@@ -39,4 +39,5 @@ function checkWinner() {
 function doTurn() {
   turn++;
   checkWinner();
+  updateState();
 }
