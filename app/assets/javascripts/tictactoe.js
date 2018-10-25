@@ -52,9 +52,4 @@ function resetBoard() {
   turn = 0;
 }
 
-function attachListeners() {
-  $('td').on('click', function() {
-    if (!$.text(this) && !checkWinner()) {
-      doTurn(this);
-    }
-  });
+
