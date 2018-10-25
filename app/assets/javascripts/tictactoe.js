@@ -12,3 +12,7 @@ $(document).ready(function() {
 function player() {
   return (turn % 2 ? 'O' : 'X');
 }
+
+function updateState() {
+  
+}
