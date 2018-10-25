@@ -37,5 +37,6 @@ function checkWinner() {
 }
 
 function doTurn() {
-  turn++
+  turn++;
+  checkWinner();
 }
