@@ -57,4 +57,4 @@ function attachListeners() {
     if (!$.text(this) && !checkWinner()) {
       doTurn(this);
     }
-  });
+  })
