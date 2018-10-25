@@ -26,7 +26,7 @@ function checkWinner() {
   var winner = false;
 
   WIN_COMBOS.some(function(combo) {
-    if (board[combo[0]]) !== "" && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) {
+    if (board[combo[0]] !== "" && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) {
       setMessage(`Player ${board[combo[0]]} Won!`)
       return winner = true;
     }
