@@ -94,7 +94,7 @@ function saveGame() {
   } else {
     $.post('/games', squareData, function(game) {
       currentGame = game.data.id;
-      currentGame.data.makeButton
+      currentGame.data.makeButton()
     });
   }
 }
