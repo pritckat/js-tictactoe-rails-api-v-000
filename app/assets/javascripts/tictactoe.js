@@ -13,6 +13,6 @@ function player() {
   return (turn % 2 ? 'O' : 'X');
 }
 
-function updateState() {
+function updateState(square) {
   $(square).text(player())
 }
