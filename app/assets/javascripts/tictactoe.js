@@ -40,8 +40,7 @@ function doTurn() {
   turn++;
   if (checkWinner()) {
     resetBoard();
-  }
-  if (!checkWinner() && turn ===9) {
+  } else if (!checkWinner() && turn ===9) {
     setMessage("Tie game.")
   }
   updateState();
