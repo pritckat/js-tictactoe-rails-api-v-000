@@ -38,13 +38,12 @@ function checkWinner() {
 
 function doTurn(square) {
   turn++;
-  checkWinner();
+  updateState(square);
   if (checkWinner()) {
     resetBoard();
   } else if (!checkWinner() && turn ===9) {
     setMessage("Tie game.")
   }
-  updateState(square);
 }
 
 function resetBoard() {
