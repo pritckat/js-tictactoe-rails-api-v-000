@@ -14,5 +14,5 @@ function player() {
 }
 
 function updateState() {
-
+  player()
 }
