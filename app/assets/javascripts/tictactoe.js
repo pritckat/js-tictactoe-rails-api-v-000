@@ -36,9 +36,9 @@ function checkWinner() {
   return winner;
 }
 
-function doTurn(square) {
+function doTurn() {
   turn++;
-  updateState(square);
+  updateState();
   if (checkWinner()) {
     resetBoard();
   } else if (!checkWinner() && turn ===9) {
