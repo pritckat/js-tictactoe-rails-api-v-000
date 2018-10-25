@@ -9,7 +9,7 @@ $(document).ready(function() {
   attachListeners();
 });
 
-function player() { 
+function player() {
   return (turn % 2 ? 'O' : 'X');
 }
 
