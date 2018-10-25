@@ -9,7 +9,7 @@ $(document).ready(function() {
   attachListeners();
 });
 
-let player = () => turnNumber % 2 ? 'O' : 'X';
+const player = () => turnNumber % 2 ? 'O' : 'X';
 
 function turn(cell) {
   let marker = player();
