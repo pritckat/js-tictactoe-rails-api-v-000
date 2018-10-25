@@ -20,3 +20,7 @@ function updateState(square) {
 function setMessage(string) {
   $('#message').text(string);
 }
+
+function checkWinner() {
+  
+}
