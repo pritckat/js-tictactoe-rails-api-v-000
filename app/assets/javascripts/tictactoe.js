@@ -18,5 +18,5 @@ function updateState(square) {
 }
 
 function setMessage() {
-  
+
 }
