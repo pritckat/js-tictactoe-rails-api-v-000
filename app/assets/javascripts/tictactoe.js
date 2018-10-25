@@ -3,6 +3,7 @@ const WIN_COMBOS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8
 
 
 var turn = 0;
+var currentGame = 0;
 
 
 $(document).ready(function() {
@@ -60,6 +61,7 @@ function attachListeners() {
   });
 
   $('#previous').on('click', () => previousGames());
+  $('#save').on('click', () => saveGame());
 }
 
 function previousGames() {
@@ -72,4 +74,27 @@ function previousGames() {
 
 function makeButton(game) {
   $('#games').append(`<button id="gameid-${game.id}">${game.id}</button><br>`)
+}
+
+function saveGame() {
+  var state = [];
+  var squareData;
+
+  $('td').text((index, square) => {
+    state.push(square);
+  });
+  squareData = {state: state};
+
+  if (currentGame) {
+    $.ajax({
+      type: 'PATCH',
+      url: `/games/${currentGame}`
+      data: squareData
+    });
+  } else {
+    $.post('/games', gameData, function(game) {
+      currentGame = game.data.id;
+      currentGame.data.makeButton
+    });
+  }
 }
