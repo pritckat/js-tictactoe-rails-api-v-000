@@ -88,7 +88,7 @@ function saveGame() {
   if (currentGame) {
     $.ajax({
       type: 'PATCH',
-      url: `/games/${currentGame}`
+      url: `/games/${currentGame}`,
       data: squareData
     });
   } else {
