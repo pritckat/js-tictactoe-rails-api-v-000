@@ -62,6 +62,7 @@ function attachListeners() {
 
   $('#previous').on('click', () => previousGames());
   $('#save').on('click', () => saveGame());
+  $('#clear').on('click', () => resetBoard());
 }
 
 function previousGames() {
