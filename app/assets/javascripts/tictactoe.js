@@ -51,3 +51,7 @@ function resetBoard() {
   $('td').empty();
   turn = 0;
 }
+
+function attachListeners() {
+  
+}
