@@ -31,5 +31,6 @@ function checkWinner() {
       return winner = true;
     }
 
-  })
+  });
+  return winner;
 }
