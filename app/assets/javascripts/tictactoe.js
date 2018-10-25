@@ -2,7 +2,7 @@
 
 
 
-let turn = 0;
+var turn = 0;
 
 
 $(document).ready(function() {
