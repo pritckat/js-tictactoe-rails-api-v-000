@@ -57,5 +57,11 @@ function attachListeners() {
     if (!$.text(this) && !checkWinner()) {
       doTurn(this);
     }
-  })
+  });
+
+  $('#previous').on('click', () => previousGames());
+}
+
+function previousGames() {
+  $.get('/games')
 }
