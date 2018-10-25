@@ -2,16 +2,16 @@
 
 
 
-let turnNumber = 0;
+let turn = 0;
 let gameNumber = 0;
 
 $(document).ready(function() {
   attachListeners();
 });
 
-function player() { turnNumber % 2 ? 'O' : 'X'}
+function player() { turn % 2 ? 'O' : 'X'}
 
-function turn(cell) {
+function turnThing(cell) {
   let marker = player();
   $(cell).text(marker);
   turnNumber++;
