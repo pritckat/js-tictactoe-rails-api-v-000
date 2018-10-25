@@ -51,6 +51,7 @@ function doTurn(square) {
 function resetBoard() {
   $('td').empty();
   turn = 0;
+  currentGame = 0;
 }
 
 function attachListeners() {
