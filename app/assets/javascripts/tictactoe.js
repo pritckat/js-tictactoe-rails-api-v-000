@@ -22,5 +22,5 @@ function setMessage(string) {
 }
 
 function checkWinner() {
-  
+
 }
