@@ -38,7 +38,7 @@ function checkWinner() {
 
 function doTurn() {
   turn++;
-  if (!checkWinner()) {
+  if (!checkWinner() && turn ===9) {
     setMessage("Tie game.")
   }
   updateState();
