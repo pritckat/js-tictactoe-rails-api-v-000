@@ -17,6 +17,6 @@ function updateState(square) {
   $(square).text(player())
 }
 
-function setMessage() {
-
+function setMessage(string) {
+  $('#message').text(string);
 }
