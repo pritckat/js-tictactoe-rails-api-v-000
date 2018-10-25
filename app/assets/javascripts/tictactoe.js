@@ -38,8 +38,16 @@ function checkWinner() {
 
 function doTurn() {
   turn++;
+  if (checkWinner()) {
+    resetBoard();
+  }
   if (!checkWinner() && turn ===9) {
     setMessage("Tie game.")
   }
   updateState();
+}
+
+function resetBoard() {
+  $('td').empty();
+  turn = 0;
 }
