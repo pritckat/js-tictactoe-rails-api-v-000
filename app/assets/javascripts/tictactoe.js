@@ -69,6 +69,7 @@ function attachListeners() {
 }
 
 function previousGames() {
+  $('#games').empty();
   $.get('/games', (prevGames) => {
     if (prevGames.data.length) {
       prevGames.data.forEach(makeButton)
